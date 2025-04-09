@@ -1,6 +1,6 @@
-import character_create
-import battle
-import gameAssets
+from BattleSimulator import character_create
+from BattleSimulator import battle
+from BattleSimulator import gameAssets
 import os
 import random
 import matplotlib.pyplot as plt
@@ -192,5 +192,3 @@ def main():
             character_create.create_character()
             input('Creating Second Fighter... (Enter to Continue)')
             character_create.create_character()
-
-main()

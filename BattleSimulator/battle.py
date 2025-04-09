@@ -1,6 +1,5 @@
 import random
-import gameAssets
-from character_create import read_characters
+from BattleSimulator import gameAssets
 from os import system
 
 # Prints out messages with multiple parts

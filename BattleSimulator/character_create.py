@@ -1,5 +1,5 @@
 import csv
-import gameAssets
+from BattleSimulator import gameAssets
 import os
 import matplotlib.pyplot as plt
 from faker import Faker 
@@ -133,7 +133,7 @@ def choose_class():
 # Reads character onto list
 def read_characters():
 
-    with open('March/BattleSimulator/characters.csv', 'r') as character_file:
+    with open('BattleSimulator/characters.csv', 'r') as character_file:
 
         character_reader = csv.reader(character_file)
 
@@ -164,7 +164,7 @@ def read_characters():
 # Saves character to csv
 def save_character(character):
 
-    with open('March/BattleSimulator/characters.csv', 'a', newline='') as character_file:
+    with open('BattleSimulator/characters.csv', 'a', newline='') as character_file:
         character_writer = csv.writer(character_file)
 
         character_writer.writerow(character)
@@ -179,7 +179,7 @@ def edit_character(character_to_edit, property, value):
         if character == character_to_edit:
             character[property] = value
 
-    with open('March/BattleSimulator/characters.csv', 'w', newline='') as character_file:
+    with open('BattleSimulator/characters.csv', 'w', newline='') as character_file:
 
         character_writer = csv.writer(character_file)
 
